@@ -1,0 +1,15 @@
+domain: yndd.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: operations
+repo: github.com/yndd/operations
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: yndd.dev
+  kind: CertificateProfile
+  path: github.com/yndd/operations/api/v1alpha1
+  version: v1alpha1
+version: "3"

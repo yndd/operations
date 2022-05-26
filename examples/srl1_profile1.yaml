@@ -1,0 +1,16 @@
+---
+apiVersion: yndd.dev/v1alpha1
+kind: CertificateProfile
+metadata:
+  name: cert-profile-1
+  namespace: ndd-system
+spec:
+  name: srl1-cert-profile
+  targetRef:
+    name: clab-kind-connect-srl1
+  properties:
+    commonName: srl1 
+    issuerRef:
+      kind: Issuer
+      name: "self-signed-issuer"
+    secretName: my-secret-cert

@@ -1,0 +1,16 @@
+---
+apiVersion: yndd.dev/v1alpha1
+kind: CertificateProfile
+metadata:
+  name: cert-profile-2
+  namespace: ndd-system
+spec:
+  name: sros-profile
+  # targetRef:
+  #   name: sr1.vsim.52-54-00-73-e5-00
+  properties:
+    commonName: sr1 
+    issuerRef:
+      kind: Issuer
+      name: "self-signed-issuer"
+    secretName: my-secret-cert-2

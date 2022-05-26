@@ -1,0 +1,6 @@
+apiVersion: yndd.dev/v1alpha1
+kind: CertificateProfile
+metadata:
+  name: certificateprofile-sample
+spec:
+  # TODO(user): Add fields here
